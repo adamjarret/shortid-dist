@@ -15,6 +15,6 @@ module.exports = merge(common.cfg, {
         inject: 'head',
         cdnPrefix: 'https://unpkg.com/shortid-dist@' + common.version + '/dist/' + common.depVersion('shortid')
     }),
-    new TouchPlugin({filename: outpath + '/.nojekyll', delay: 2000})
+    new TouchPlugin({filename: outpath + '/.nojekyll'})
   ]
 });

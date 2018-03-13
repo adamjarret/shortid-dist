@@ -1,5 +1,7 @@
 # shortid-dist
 
+[![npm version](https://badge.fury.io/js/shortid-dist.svg)](https://www.npmjs.com/package/shortid-dist)
+
 CDN friendly build of [shortid](https://www.npmjs.com/package/shortid).
 The `shortid` function is exposed as a global.
 
