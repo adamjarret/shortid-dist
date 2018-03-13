@@ -9,13 +9,13 @@ The `shortid` function is exposed as a global.
 
 ### Bundled + Minified
 
-    <script src="https://unpkg.com/shortid-dist@1.0.2/dist/shortid-2.2.8.min.js"></script>
+    <script src="https://unpkg.com/shortid-dist@1.0.3/dist/shortid-2.2.8.min.js"></script>
 
 3 KB
 
 ### Bundled
 
-    <script src="https://unpkg.com/shortid-dist@1.0.2/dist/shortid-2.2.8.js"></script>
+    <script src="https://unpkg.com/shortid-dist@1.0.3/dist/shortid-2.2.8.js"></script>
 
 31 KB
 
@@ -42,7 +42,7 @@ The CWD of the `npm` commands is assumed to be the project root folder.
 
 ### Building
 
-Bundle shortid with webpack (minified and unminified) and generate **index.html** in the project root:
+Bundle shortid with webpack (minified and unminified):
 
     npm run build
 
@@ -68,17 +68,28 @@ For the versions available, see the [tags on this repository](https://github.com
 
 ## Releasing
 
-Run `npm version` with one of the following arguments:
+The `npm version` and `npm run links` commands both accept a semver argument:
 `<newversion>|major|minor|patch` (where `<newversion>` is a standard version number, ex. 1.0.0).
 See [npm-version](https://docs.npmjs.com/cli/version) for more information.
 
-    npm version patch
-    npm publish
-    git push --tags
-
-To test what will be included in the npm bundle:
+Examine what will be included in the npm bundle:
 
     npm run pack
+
+Update the links in the **README.md** and **index.html** files (and commit the changes) _before_ running `npm version`:
+
+    npm run links -- patch
+    git add README.md index.html
+    git commit -m "Updated links"
+
+Bump the version number in **package.json** and create a git tag:
+
+    npm version patch
+
+Publish a new version:
+
+    npm publish
+    git push origin master --tags
 
 ## Author
 

@@ -5,9 +5,10 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack -d && webpack -p",
-    "clean": "del dist index.html package shortid-dist-*.tgz",
+    "clean": "del dist package shortid-dist-*.tgz",
     "pack": "npm pack . && tar -xzf shortid-dist-*.tgz && echo && find package -type f",
     "repack": "npm run clean && npm run build && npm run pack",
+    "links": "node scripts/links.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -29,8 +30,8 @@
   },
   "devDependencies": {
     "del-cli": "^1.1.0",
-    "html-webpack-plugin": "^3.0.6",
     "license-webpack-plugin": "^1.3.0",
+    "semver": "^5.5.0",
     "webpack": "^4.1.1",
     "webpack-cli": "^2.0.11"
   }
