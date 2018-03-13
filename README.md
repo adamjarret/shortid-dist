@@ -9,13 +9,13 @@ The `shortid` function is exposed as a global.
 
 ### Bundled + Minified
 
-    <script src="https://unpkg.com/shortid-dist@1.0.0/dist/shortid-2.2.8.min.js"></script>
+    <script src="https://unpkg.com/shortid-dist@1.0.1/dist/shortid-2.2.8.min.js"></script>
 
 3 KB
 
 ### Bundled
 
-    <script src="https://unpkg.com/shortid-dist@1.0.0/dist/shortid-2.2.8.js"></script>
+    <script src="https://unpkg.com/shortid-dist@1.0.1/dist/shortid-2.2.8.js"></script>
 
 31 KB
 
