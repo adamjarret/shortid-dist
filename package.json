@@ -1,6 +1,6 @@
 {
   "name": "shortid-dist",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "CDN friendly build of shortid",
   "main": "index.js",
   "scripts": {
