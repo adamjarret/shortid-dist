@@ -9,13 +9,13 @@ The `shortid` function is exposed as a global.
 
 ### Bundled + Minified
 
-    <script src="https://unpkg.com/shortid-dist@1.0.1/dist/shortid-2.2.8.min.js"></script>
+    <script src="https://unpkg.com/shortid-dist@1.0.2/dist/shortid-2.2.8.min.js"></script>
 
 3 KB
 
 ### Bundled
 
-    <script src="https://unpkg.com/shortid-dist@1.0.1/dist/shortid-2.2.8.js"></script>
+    <script src="https://unpkg.com/shortid-dist@1.0.2/dist/shortid-2.2.8.js"></script>
 
 31 KB
 
@@ -29,7 +29,7 @@ See the [Live Demo](https://adamjarret.github.io/shortid-dist).
 
 Follow these instructions to get a local copy of the project source code for development.
 
-The **docs/index.html** file can be opened directly in a browser (`file://` URL).
+The **index.html** file in the project root can be opened directly in a browser (`file://` URL).
 
 The CWD of the `npm` commands is assumed to be the project root folder.
 
@@ -42,7 +42,7 @@ The CWD of the `npm` commands is assumed to be the project root folder.
 
 ### Building
 
-Bundle shortid with webpack (minified and unminified) and generate **docs**:
+Bundle shortid with webpack (minified and unminified) and generate **index.html** in the project root:
 
     npm run build
 
