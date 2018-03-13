@@ -1,5 +1,6 @@
 package
 shortid-dist-*.tgz
-docs
 src
 webpack*
+index.html
+.nojekyll
