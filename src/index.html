@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <title>shortid-dist demo</title>
+    <style type="text/css">
+        body {
+            font-family: "Lucida Console", Monaco, "Courier New", Courier, monospace;
+            text-align: center;
+            padding: 24px;
+        }
+        #demo {
+            font-size: 48px;
+        }
+        .separate {
+            border-top: 1px solid #444;
+            margin-top: 24px;
+            padding-top: 24px
+        }
+        .separate p {
+            margin-top: 0;
+        }
+    </style>
+  </head>
+  <body>
+    <div id="demo"></div>
+
+    <div class="separate">
+        <p><a href="<%= htmlWebpackPlugin.options.cdnPrefix %>.min.js">Minified Source</a> (<i>3 KB</i>)</p>
+        <p><a href="<%= htmlWebpackPlugin.options.cdnPrefix %>.js">Unminified Source</a> (<i>31 KB</i>)</p>
+    </div>
+
+    <footer class="separate">
+        <p>Powered by <a href="https://github.com/adamjarret/shortid-dist">shortid-dist</a></p>
+    </footer>
+
+    <script type="text/javascript">
+        document.getElementById("demo").innerHTML = shortid();
+    </script> 
+  </body>
+</html>

@@ -1,0 +1,40 @@
+{
+  "name": "shortid-dist",
+  "version": "0.0.1",
+  "description": "CDN friendly build of shortid",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run dist && npm run docs",
+    "dist": "webpack -d && webpack -p",
+    "docs": "webpack --config webpack.config.docs.js -p",
+    "clean": "del dist docs package shortid-dist-*.tgz",
+    "pack": "npm pack . && tar -xzf shortid-dist-*.tgz && echo && find package -type f",
+    "repack": "npm run clean && npm run build && npm run pack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adamjarret/shortid-dist.git"
+  },
+  "bugs": {
+    "url": "https://github.com/adamjarret/shortid-dist/issues"
+  },
+  "keywords": [
+    "shortid",
+    "cdn"
+  ],
+  "homepage": "https://adamjarret.github.io/shortid-dist",
+  "author": "Adam Jarret <adam@atj.me>",
+  "license": "0BSD",
+  "dependencies": {
+    "shortid": "^2.2.8"
+  },
+  "devDependencies": {
+    "del-cli": "^1.1.0",
+    "html-webpack-plugin": "^3.0.6",
+    "license-webpack-plugin": "^1.3.0",
+    "webpack": "^4.1.1",
+    "webpack-cli": "^2.0.11",
+    "webpack-merge": "^4.1.2"
+  }
+}

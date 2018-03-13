@@ -1,0 +1,5 @@
+package
+shortid-dist-*.tgz
+docs
+src
+webpack*
