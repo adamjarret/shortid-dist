@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <meta name="description" content="CDN friendly build of shortid">
     <title>shortid-dist demo</title>
     <style type="text/css">
         body {
@@ -12,6 +13,7 @@
         }
         #demo {
             font-size: 48px;
+            margin-bottom: 48px;
         }
         .separate {
             border-top: 1px solid #444;
@@ -27,13 +29,26 @@
   <body>
     <div id="demo"></div>
 
-    <div class="separate">
-        <p><a href="https://unpkg.com/shortid-dist@1.0.3/dist/shortid-2.2.8.min.js">Minified Source</a> (<i>3 KB</i>)</p>
-        <p><a href="https://unpkg.com/shortid-dist@1.0.3/dist/shortid-2.2.8.js">Unminified Source</a> (<i>31 KB</i>)</p>
+    <div>
+        <p>
+            <a href="https://github.com/adamjarret/shortid-dist">shortid-dist</a> provides a CDN friendly build of
+            <a href="https://www.npmjs.com/package/shortid">shortid</a>
+        </p>
+        <p><a href="https://unpkg.com/shortid-dist@1.0.3/dist/shortid-2.2.8.min.js">shortid-2.2.8.min.js</a> (<i>3 KB</i>)</p>
+        <p><a href="https://unpkg.com/shortid-dist@1.0.3/dist/shortid-2.2.8.js">shortid-2.2.8.js</a> (<i>31 KB</i>)</p>
     </div>
 
     <footer class="separate">
-        <p>Powered by <a href="https://github.com/adamjarret/shortid-dist">shortid-dist</a></p>
+        <p>
+            shortid-dist is licensed under
+            <a href="https://github.com/adamjarret/shortid-dist/blob/master/LICENSE.txt">0BSD</a> by
+            <a href="https://atj.me">Adam Jarret</a>.
+        </p>
+        <p>
+            shortid is licensed under
+            <a href="https://github.com/adamjarret/shortid-dist/blob/master/dist/LICENSE.shortid.txt">
+                MIT +no-false-attribs</a> by <a href="https://github.com/dylang">Dylan Greene</a>.
+        </p>
     </footer>
 
     <script type="text/javascript">
