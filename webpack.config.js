@@ -4,7 +4,7 @@ const prod = process.argv.indexOf('-p') !== -1;
 
 module.exports = {
     entry: {
-        // license-webpack-plugin configuration expects entry to have a name 
+        // license-webpack-plugin configuration expects entry to have a name
         'shortid': './index.js'
     },
     output: {
